@@ -1,0 +1,24 @@
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 548 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.159.48:5173/
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+11:07:11 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:07:20 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:07:31 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:07:47 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:07:58 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:08:06 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:08:31 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:08:40 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:08:52 AM [vite] hmr update /src/components/ChatbotModal.tsx, /src/index.css
+11:09:08 AM [vite] page reload index.html
+11:09:22 AM [vite] hmr update /src/pages/Index.tsx, /src/index.css
+11:09:43 AM [vite] page reload index.html

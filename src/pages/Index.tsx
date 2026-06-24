@@ -1,5 +1,5 @@
 import { StarField } from "@/components/StarField"
-import { ChevronDown, Linkedin, Users, LineChart, Clock, Lightbulb, BotIcon as Robot } from "lucide-react"
+import { ChevronDown, BookOpen, Scroll, Music, Sparkles, BotIcon as Robot } from "lucide-react"
 import { ContactForm } from "@/components/ContactForm"
 import { ChatbotModal } from "@/components/ChatbotModal"
 import { useState, useEffect, useRef } from "react"
@@ -209,16 +209,6 @@ export default function Index() {
       <section className="relative w-full overflow-hidden bg-black" style={heroStyle}>
         {/* Navigation links in top right corner */}
         <div className="absolute top-6 right-6 z-10 flex space-x-3">
-          <a
-            href="https://linkedin.com/company/example"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Профиль в LinkedIn"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white bg-transparent text-white transition-colors hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
-          >
-            <Linkedin className="h-5 w-5" />
-          </a>
-
           <Button
             onClick={scrollToContact}
             variant="outline"
@@ -241,13 +231,13 @@ export default function Index() {
               }}
             >
               <h1 className="text-4xl font-bold text-white md:text-6xl font-heading">
-                Nebula Ventures{" "}
-                <span role="img" aria-label="rocket">
-                  🚀
+                Русский фольклор{" "}
+                <span role="img" aria-label="firebird">
+                  🔥
                 </span>
               </h1>
               <p className="mt-4 text-lg text-gray-300 md:text-xl px-4 max-w-xs mx-auto md:max-w-none">
-                Экспертиза в области ИИ и технологий
+                Сказки, былины и легенды нашего народа
               </p>
               <Button
                 onClick={scrollToAbout}
@@ -255,7 +245,7 @@ export default function Index() {
                 size="sm"
                 className="mt-6 bg-transparent text-white border-white hover:bg-white hover:text-black transition-colors"
               >
-                О нас
+                О проекте
               </Button>
             </div>
           </div>
@@ -289,25 +279,25 @@ export default function Index() {
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-gray-700 flex-shrink-0">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/icon-d4g0PyeQftYkhSxiNDNMwiGNNteM3o.svg"
-                  alt="Профиль"
+                  src="https://cdn.poehali.dev/projects/ab923efc-c05c-4dec-8c51-7de664bebef2/files/f6a35bca-ade2-40d9-957a-ab8c48240a0c.jpg"
+                  alt="Жар-птица"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="space-y-4 text-center md:text-left px-4 md:px-0">
-                <h2 className="text-3xl font-bold font-heading">О нас</h2>
+                <h2 className="text-3xl font-bold font-heading">О проекте</h2>
                 <div className="space-y-4 max-w-2xl">
                   <p className="text-gray-300">
-                    Мы помогаем компаниям использовать передовые технологии, чтобы радовать клиентов
-                    и оптимизировать бизнес-процессы.
+                    Русский фольклор — это живая память народа: сказки у печки, былины о богатырях,
+                    обрядовые песни и загадочные приметы, что передавались из поколения в поколение.
                   </p>
                   <p className="text-gray-300">
-                    Стратегическое планирование, техническое лидерство или практическая поддержка разработки —
-                    мы поможем создать правильные решения для вашего бизнеса.
+                    Здесь мы бережно собираем сокровища устного народного творчества —
+                    от Жар-птицы и Бабы-яги до колыбельных и хороводов, чтобы они не угасли во времени.
                   </p>
                   <p className="text-gray-300">
-                    Наша команда имеет более 10 лет опыта создания сложных технических продуктов
-                    для стартапов и крупных компаний. Свяжитесь с нами или попробуйте ИИ-ассистента.
+                    Окунитесь в мир чудес и мудрости предков. Задайте вопрос нашему сказителю
+                    или напишите нам — расскажем легенду, которую вы ещё не слышали.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center md:justify-start">
@@ -327,7 +317,7 @@ export default function Index() {
                       className="bg-transparent text-white border-white hover:bg-white hover:text-black transition-colors w-[140px] mx-auto sm:mx-0 flex items-center justify-center"
                     >
                       <Robot className="mr-1 h-4 w-4" />
-                      ИИ-чат
+                      Сказитель
                     </Button>
                   </div>
                 </div>
@@ -346,7 +336,7 @@ export default function Index() {
               isServicesTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            Услуги
+            Жанры фольклора
           </h2>
           <div
             ref={servicesContentRef}
@@ -356,46 +346,51 @@ export default function Index() {
             )}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Fractional CPO */}
+              {/* Сказки */}
               <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
                 <div className="flex items-center mb-4">
-                  <Users className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">CPO / CTO на аутсорсе</h3>
+                  <BookOpen className="h-7 w-7 text-white mr-4" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold font-heading">Сказки</h3>
                 </div>
                 <p className="text-gray-300">
-                  Продуктовое лидерство, выстраивание процессов, развитие команды, технологическая стратегия.
+                  Волшебные истории о Жар-птице, Василисе Премудрой и Кощее Бессмертном —
+                  где добро всегда побеждает зло.
                 </p>
               </div>
 
-              {/* Product Consulting */}
+              {/* Былины */}
               <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
                 <div className="flex items-center mb-4">
-                  <LineChart className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">Продуктовый консалтинг</h3>
+                  <Scroll className="h-7 w-7 text-white mr-4" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold font-heading">Былины</h3>
                 </div>
                 <p className="text-gray-300">
-                  Разработка роадмапа, поиск и валидация product-market fit, оценка кандидатов.
+                  Героические сказания о богатырях — Илье Муромце, Добрыне Никитиче
+                  и Алёше Поповиче, защитниках земли русской.
                 </p>
               </div>
 
-              {/* Interim Leadership */}
+              {/* Обряды и приметы */}
               <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
                 <div className="flex items-center mb-4">
-                  <Clock className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">Временное руководство</h3>
-                </div>
-                <p className="text-gray-300">Временный CPO или VP of Product для компаний в период трансформации.</p>
-              </div>
-
-              {/* Workshops & Advisory */}
-              <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
-                <div className="flex items-center mb-4">
-                  <Lightbulb className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">Разработка продуктов</h3>
+                  <Sparkles className="h-7 w-7 text-white mr-4" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold font-heading">Обряды и приметы</h3>
                 </div>
                 <p className="text-gray-300">
-                  Быстрое прототипирование и запуск внутренних и внешних приложений и сайтов
-                  с использованием современных инструментов.
+                  Народные традиции, гадания, заговоры и приметы — мудрость предков,
+                  что жила в каждом дне крестьянской жизни.
+                </p>
+              </div>
+
+              {/* Песни и пословицы */}
+              <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
+                <div className="flex items-center mb-4">
+                  <Music className="h-7 w-7 text-white mr-4" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold font-heading">Песни и пословицы</h3>
+                </div>
+                <p className="text-gray-300">
+                  Обрядовые и колыбельные песни, хороводы, загадки и пословицы —
+                  мелодия и меткое слово народной души.
                 </p>
               </div>
             </div>
@@ -412,7 +407,7 @@ export default function Index() {
               isHeadingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            Давайте создавать
+            Напишите нам
           </h2>
           <ContactForm />
         </div>
